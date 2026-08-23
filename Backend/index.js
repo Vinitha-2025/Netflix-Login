@@ -12,9 +12,6 @@ let pass=""
 var emails="user@gmail.com"
 var passs="1234"
 
-app.get("/", (req, res) => {
-    res.send("Backend is working");
-})
 
 app.post("/signup",function(req,res){
 
@@ -27,7 +24,7 @@ app.post("/signup",function(req,res){
 
 })
 
-app.post("/login",function(req,res){
+app.post("/",function(req,res){
 
     if((email === req.body.emailid || pass === req.body.passid)
          && (emails === req.body.emailid || passs === req.body.passid)){
@@ -41,7 +38,6 @@ console.log("Login  :", req.body.emailid, req.body.passid)
     }
 })
 
-module.exports = app
-// app.listen(3000,function(){
-//     console.log("Server Started")
-// })
+app.listen(3000,function(){
+    console.log("Server Started")
+})
