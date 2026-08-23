@@ -6,7 +6,7 @@ function Dashboard(){
         <div className="relative min-h-screen">
     
     <div className="absolute inset-0">
-        <img src={netflix} alt="" className=" bg-cover bg-center" />
+        <img src={netflix} alt="" className=" bg-cover bg-center w-full h-full" />
     </div>
 
     <div className="absolute inset-0 bg-black/75"></div>
