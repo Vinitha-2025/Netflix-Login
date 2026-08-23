@@ -41,3 +41,4 @@ console.log("Login  :", req.body.emailid, req.body.passid)
 app.listen(3000,function(){
     console.log("Server Started")
 })
+module.exports = app;
