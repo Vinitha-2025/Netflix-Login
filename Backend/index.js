@@ -12,6 +12,10 @@ let pass=""
 var emails="user@gmail.com"
 var passs="1234"
 
+app.get("/", (req, res) => {
+    res.send("Backend is working");
+})
+
 app.post("/signup",function(req,res){
 
  email=req.body.emailid
@@ -37,6 +41,7 @@ console.log("Login  :", req.body.emailid, req.body.passid)
     }
 })
 
-app.listen(3000,function(){
-    console.log("Server Started")
-})
+module.exports = app
+// app.listen(3000,function(){
+//     console.log("Server Started")
+// })
