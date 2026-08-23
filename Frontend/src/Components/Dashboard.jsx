@@ -1,4 +1,4 @@
-import netflix from "./assets/images/Netflix-Image.webp"
+import netflix from "../assets/images/Netflix-Image.webp"
 
 function Dashboard(){
 
