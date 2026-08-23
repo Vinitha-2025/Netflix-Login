@@ -62,7 +62,7 @@ function Signup(){
             setwrong(true)
         }
 
-        const signupdetails=axios.post("http://localhost:3000/signup",{"emailid":user, "passid":pass})
+        const signupdetails=axios.post("https://netflix-login-theta-swart.vercel.app/signup",{"emailid":user, "passid":pass})
         signupdetails.then(function(data){
                 navigate("/")
       })

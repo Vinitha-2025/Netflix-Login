@@ -49,7 +49,7 @@ function Login(){
             setcolor(false)
             setpara(true)
         }
-        const logindetails=axios.post("http://localhost:3000/",{"emailid":user, "passid":pass})
+        const logindetails=axios.post("https://netflix-login-theta-swart.vercel.app/",{"emailid":user, "passid":pass})
         logindetails.then(function(data){
             if(data.data===true){
                 navigate("/dash")
