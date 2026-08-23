@@ -26,8 +26,8 @@ app.post("/signup",function(req,res){
 
 app.post("/",function(req,res){
 
-    if((email === req.body.emailid || pass === req.body.passid)
-         && (emails === req.body.emailid || passs === req.body.passid)){
+    if((email === req.body.emailid && pass === req.body.passid)
+         || (emails === req.body.emailid && passs === req.body.passid)){
 console.log("Stored  :",email,pass)
 console.log("Login  :", req.body.emailid, req.body.passid)
         res.send(true)
