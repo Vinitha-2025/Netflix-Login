@@ -23,7 +23,7 @@ app.post("/signup",function(req,res){
 
 })
 
-app.post("/",function(req,res){
+app.post("/login",function(req,res){
 
     if((email === req.body.emailid || pass === req.body.passid)
          && (emails === req.body.emailid || passs === req.body.passid)){
